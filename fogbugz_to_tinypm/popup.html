@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fogbugz to TinyPM</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/nprogress.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row alerts"></div>
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <form id="login" role="form" class="login-form">
+            <div class="form-group">
+              <label class="sr-only" for="username">Username</label>
+              <input class="form-control" id="username" autofocus placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="password">Password</label>
+              <input class="form-control" type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Connect">
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+
+          <form id="import" role="form" class="import-form">
+            <div class="logout">
+              <a href="#logout">Logout</a>
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="ticket_number">Ticket #</label>
+              <input class="form-control" id="ticket_number" autofocus placeholder="Ticket #">
+              <select id="points">
+                <option value="0.0">0</option>
+                <option value="0.5">&frac12;</option>
+                <option value="1.0">1</option>
+                <option value="2.0">2</option>
+                <option value="3.0">3</option>
+                <option value="5.0">5</option>
+                <option value="8.0">8</option>
+                <option value="13.0">13</option>
+                <option value="20.0">20</option>
+                <option value="40.0">40</option>
+                <option value="80.0">80</option>
+                <option value="100.0">100</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <div id="loader" class="well">Start typing to find user story</div>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Import">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/nprogress.js"></script>
+    <script src="assets/js/popup.js"></script>
+  </body>
+</html>
+

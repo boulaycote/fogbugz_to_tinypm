@@ -1,0 +1,18 @@
+body {
+	width: 300px;
+	padding: 20px;
+}
+
+.login-form, .import-form {
+	display: none;
+}
+
+.logout {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+#ticket_number {
+	display: inline-block;
+	width: 170px;
+}
