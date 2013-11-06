@@ -1,4 +1,10 @@
 fogbugz_to_tinypm
 =================
 
-Easily transfer ticket (userstories) from Fogcreek's FogBugz to Agilers' TinyPM
+Chrome extension to easily transfer ticket (userstories) from Fogcreek's FogBugz to Agilers' TinyPM.
+
+Installation
+============
+* Open up Extensions panel (Tools > Extensions)
+* Load unpacked extension...
+* Select the extension's folder
