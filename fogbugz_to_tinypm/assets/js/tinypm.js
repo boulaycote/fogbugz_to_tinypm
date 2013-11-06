@@ -45,3 +45,19 @@ if (iteration_id && project_code) {
 		});
 	});
 }
+
+$(function () {
+	// Add links to stories
+	var stories = $(".story");
+
+	$.each(stories, function (index, story) {
+		var title = $(".title", story).text();
+		var match = /\w+/.exec(title);
+		var itemId = $(".item_id", story);
+
+		if (!match) return;
+
+		var link = $("<a href='http://69.70.14.194/fogbugz/default.asp?" + match[0] + "' target='_blank'>[Link to fogbugz]</a>");
+		link.insertAfter(itemId);
+	});
+});
